@@ -1,4 +1,4 @@
-
+## 双进程讣告
 ### 1. https://github.com/xingda920813/HelloDaemon/blob/master
 ### 2. 继承 AbsWorkService, 实现 6 个抽象方法
 
@@ -88,3 +88,5 @@ void onBackPressed(Activity a);
 * startService( new Intent(getApplicationContext(),AbnormalService.class);
 ## 百度全家桶
 ## 一个像素惨案
+## 通知栏监听服务
+## 华为小米推送
