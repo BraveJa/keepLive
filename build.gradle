@@ -1,0 +1,38 @@
+apply plugin: 'com.android.library'
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.2"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 11
+        versionName "1.2.2"
+    }
+    buildTypes {
+        release {
+
+            minifyEnabled false
+            buildConfigField "boolean", "DEBUG_DAEMON", "false"
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            buildConfigField "boolean", "DEBUG_DAEMON", "true"
+
+        }
+        app_test {
+            buildConfigField "boolean", "DEBUG_DAEMON", "true"
+
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:appcompat-v7:27.0.2'
+    api 'io.reactivex.rxjava2:rxjava:2.+'
+    api 'com.android.support:support-annotations:+'
+}
+
