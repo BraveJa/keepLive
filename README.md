@@ -1,3 +1,7 @@
+## 供大家学习的一个保活库 ,总结牛人的多种保活方案 ,实测开启无声的音频方案最有效果 ,app被杀拉活无望 !!!!! 
+
+
+
 ## 双进程讣告
 ### 1. https://github.com/xingda920813/HelloDaemon/blob/master
 ### 2. 继承 AbsWorkService, 实现 6 个抽象方法
