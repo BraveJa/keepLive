@@ -3,6 +3,8 @@
 * 跳转到自动启界面，允许自启动
 * 忽略电池优化
 * 通知栏权限
+### 注意android系统8.0+ 后台不允许startService() ,需要用startForegroundService() https://blog.csdn.net/kdsde/article/details/82143866
+    * 通知栏必须加 channel https://blog.csdn.net/guolin_blog/article/details/79854070
 
 
 
